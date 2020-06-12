@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu Example</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.75;
+        padding: 20px;
+      }
+
+      header nav {
+        flex-direction: column;
+        display: none;
+      }
+
+      header a {
+        flex: 1;
+        text-decoration: none;
+        color: blue;
+        height: 60px;
+        line-height: 60px;
+      }
+
+      header a:first-child {
+        border: none;
+      }
+
+      header button {
+        position: relative;
+        border: none;
+        background: none;
+        width: 40px;
+        height: 25px;
+        padding: 0;
+      }
+
+      header button span,
+      header button span:before,
+      header button span:after {
+        position: absolute;
+        left: 0;
+        display: block;
+        content: "";
+        height: 2px;
+        background: black;
+        width: 100%;
+      }
+
+      header button span:before {
+        top: 0;
+      }
+      header button span {
+        position: static;
+        top: 50%;
+        margin-top: -1px;
+      }
+      header button span:after {
+        top: auto;
+        bottom: 0;
+      }
+
+      @media (max-width: 500px) {
+        header button.open + nav {
+          display: flex;
+        }
+      }
+
+      /*
+    Anything in here will ONLY apply if the browser
+    is larger than 500px
+    */
+      @media (min-width: 500px) {
+        header nav {
+          display: flex;
+          flex-direction: row;
+        }
+
+        header button {
+          display: none;
+        }
+
+        header nav a {
+          color: red;
+          text-align: center;
+          border-left: 1px solid #ddd;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <button id="hamburger">
+        <span></span>
+      </button>
+
+      <nav>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+        <a href="">Link 5</a>
+        <a href="">Link 6</a>
+      </nav>
+
+      <script>
+        const btn = document.getElementById("hamburger");
+
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("open");
+        });
+      </script>
+    </header>
+
+    <article>
+      <h1>Lorem Ipsum</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        repellendus nobis maxime officiis eos iste sint est eaque, rerum quaerat
+        asperiores, voluptates assumenda a dolores vero omnis tempore qui?
+        Fugit?
+      </p>
+    </article>
+
+    <footer>
+      Copywrite
+    </footer>
+  </body>
+</html>
