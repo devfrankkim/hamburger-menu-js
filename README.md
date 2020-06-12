@@ -3,6 +3,7 @@
 - [x] Hamburger Menu
 - [x] DOM manipulation
 - [x] Event Listener
+- [x] max-width(works less than max-width), min-width(works larger than min-width) 
 - [x] CSS selector "+"  => [reference](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element_pluss)
 
 

@@ -35,9 +35,11 @@
       }
 
       header button {
+        cursor: pointer;
         position: relative;
         border: none;
         background: none;
+        outline: none;
         width: 40px;
         height: 25px;
         padding: 0;
@@ -68,7 +70,7 @@
         bottom: 0;
       }
 
-      @media (max-width: 500px) {
+      @media (max-width: 550px) {
         header button.open + nav {
           display: flex;
         }
@@ -78,7 +80,7 @@
     Anything in here will ONLY apply if the browser
     is larger than 500px
     */
-      @media (min-width: 500px) {
+      @media (min-width: 551px) {
         header nav {
           display: flex;
           flex-direction: row;
